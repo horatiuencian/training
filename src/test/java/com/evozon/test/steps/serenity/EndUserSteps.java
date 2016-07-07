@@ -12,10 +12,10 @@ public class EndUserSteps extends ScenarioSteps {
 
     DictionaryPage dictionaryPage;
 
-    @Step
-    public void enters(String keyword) {
-        dictionaryPage.enter_keywords(keyword);
-    }
+//    @Step
+//    public void enters(String keyword) {
+//        dictionaryPage.enter_keywords(keyword);
+//    }
 
     @Step
     public void starts_search() {
@@ -32,9 +32,9 @@ public class EndUserSteps extends ScenarioSteps {
         dictionaryPage.open();
     }
 
-    @Step
-    public void looks_for(String term) {
-        enters(term);
-        starts_search();
-    }
+//    @Step
+//    public void looks_for(String term) {
+//        enters(term);
+//        starts_search();
+//    }
 }

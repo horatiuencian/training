@@ -22,14 +22,14 @@ public class DictionaryPage extends PageObject {
     @FindBy(name="go")
     private WebElementFacade lookupButton;
 
-    public void enter_keywords(String keyword) {
+    public void enter_keywordsByUser2(String keyword) {
         searchTerms.type(keyword);
     }
 
     public void lookup_terms() {
         lookupButton.click();
     }
-
+ 
     public List<String> getDefinitions() {
         WebElementFacade definitionList = find(By.tagName("ol"));
         List<WebElement> results = definitionList.findElements(By.tagName("li"));
